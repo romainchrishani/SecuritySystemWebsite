@@ -7,6 +7,7 @@ import {IoLogoTwitter} from 'react-icons/io'
 const Footer = () => {
   return (
     <footer>
+      <h5 className='sentence'>Copyright © 2022. St.Michael's Security Controls. All rights reserved.</h5>
       <ul className='permalinks'>
         <li><a href='#'>Home</a></li>
         <li><a href='#about'>About</a></li>

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 *{
     margin:0;
     padding: 0;
@@ -9,19 +9,18 @@
     text-decoration: none;
 }
 :root{
-    --color-bg:#ffffff;
-    --color-bg-variant: #85864b;
-    --color-primary:#808000;
+    --color-bg:#1a1a1a;
+    --color-primary:#2f4f4f;
     --color-primary-variant:#c3c3c3;
-    --color-white:#000000;
-    --color-light:#dddee5;
+    --color-white:#ffffff;
+    --color-light:#ffff8f;
 
     --transition:all 400ms ease;
 
 
     --container-width-lg:75%;
     --container-width-md:86%;
-    --container-width-ms:90%;
+    --container-width-ms:150%;
 }
 html{
     scroll-behavior: smooth;
@@ -30,38 +29,39 @@ html{
     display: none;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway';
     background:var(--color-bg);
     color: var(--color-white);
-    line-height: 1.7;
+    line-height: 2;
+    letter-spacing: 0.01rem;
 }
-.container{
+/* .container{
     width:var(--container-width-lg);
     margin:0 auto;
-}
+} */
 h1,h2,h3,h4,h5{
     font-weight: bold;
 }
-h1{
+/* h1{
     font-size: 4rem;
-}
-section{
+} */
+/* section{
     margin-top:5rem;
-    height:70vh;
+    height:100vh;
 }
 section>h2,section>h5{
     text-align: center;
-    color: var(--color-light);
+    color: #ffffff;
 }
 section>h2{
-    color: var(--color-primary);
+    color: #ffffff;
     margin-bottom: 3rem;
-}
+} */
 .text-light{
     color: var(--color-light);
 }
 a{
-    color:black;
+    color:#ffffff;
     transition: var(--transition);
 }
 a:hover{
@@ -70,28 +70,24 @@ a:hover{
 .btn{
     width:max-content;
     display: inline-block;
-    color: black;
+    color: #ffffff;
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-primary-variant);
     transition: var(--transition);
 }
 .btn:hover{
-    background: var(--color-white);
+    background:#ffff8f;
     color: var(--color-bg);
     border-color: transparent;
 }
 .btn-primary{
-    background: var(--color-primary);
+    background: var(--color-primary-variant);
     color: var(--color-bg);
+    
 }
-/* img{
-    display: block;
-    width: 100%;
-    object-fit: cover;
-} */
-
+/* 
 @media screen and(max-width:1024px) {
     .container{
         width: var(--container-width-md);
@@ -108,4 +104,39 @@ a:hover{
     selection>h2{
         margin-bottom: 2rem;
     }
+} */
+/* img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+} */
+
+@media screen and(max-width:1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    selection{
+        margin-top: 6rem;
+    }
 }
+
+@media screen and(max-width:768px) {
+    .container{
+        width: var(--container-width-ms);
+    }
+    selection>h2{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and(max-width:375px) {
+    .container{
+        width: 0%;
+    }
+    selection>h2{
+        margin-bottom: 1rem;
+    }
+}
+
+
+
