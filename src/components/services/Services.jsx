@@ -9,7 +9,7 @@ function Services() {
   return (
     <section id='services'>
       <div className='service_container'>
-      <h3>Our Services</h3>
+      <h2>Our Services</h2>
           <p>Learn about the state of the physical security market to determine the best solution to manage and protect your facilities</p>
           <div class="row">
           <div class="column">

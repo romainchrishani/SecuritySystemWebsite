@@ -16,6 +16,7 @@ const Contact = () => {
   };
   return (
     <section id='contacts'>
+    <div className='contact_container'></div>
       <h2>Contact Us</h2>
       <div className='container contact_container'>
         <div className="contact_options">
@@ -23,8 +24,8 @@ const Contact = () => {
           <article className='contact_option'>
            <MdOutlineEmail className="contact_option-icon"/>
             <h4>E-mail</h4>
-            <h5>st.michael24h7d@gmail.com</h5>
-            <a href='mailto:st.michael24h7d@gmail.com'>Send An Email</a>
+            {/* <h5>stmichael.ss24h7d@gmail.com</h5> */}
+            <a href='mailto:stmichael.ss24h7d@gmail.com'>Send An Email</a>
           </article>
           <article className='contact_option'>
            <RiMessengerFill className="contact_option-icon"/>
@@ -35,7 +36,7 @@ const Contact = () => {
           <article className='contact_option'>
            <BsWhatsapp className="contact_option-icon"/>
             <h4>WhatsApp</h4>
-            <h5>+16476845050</h5>
+            <h5>+1 (647) 684-5050</h5>
             <a href='https://api.whatsapp.com/send?phone=++16476845050'>Contact through WhatsApp</a>
           </article> 
         </div>

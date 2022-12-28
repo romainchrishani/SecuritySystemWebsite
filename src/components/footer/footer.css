@@ -1,8 +1,9 @@
 footer{
-    background: #808000;
-    padding: 3rem 0;
+    background: #023020;
+    padding: 3rem ;
     text-align: 0.9rem;
-    margin-top: 7rem;
+    margin-top: 20rem;
+    height: 200px;
 }
 footer a{
     color: aliceblue;
@@ -12,12 +13,12 @@ footer a{
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin: 0 auto 3rem;
+    margin: 0 auto 0.5rem;
 }
 .footer_socials{
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 4rem;
 }
 .footer_socials a{
@@ -30,7 +31,7 @@ footer a{
 }
 .footer_socials a:hover{
     background: transparent;
-    color: var(--color-bg);
+    color: #ffffff;
 }
 /* .footer_copyright{
     margin-bottom: 4rem;
